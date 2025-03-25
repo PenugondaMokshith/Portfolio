@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Tech Insights</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background: #1f1f1f;
+            color: #00c3ff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #00c3ff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        section {
+            padding: 20px;
+            background: #1e1e1e;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 195, 255, 0.3);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: #ffffff;
+        }
+        table, th, td {
+            border: 1px solid #00c3ff;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        button {
+            background: #00c3ff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0096c7;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #00c3ff;
+            border-radius: 4px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Future Tech Insights</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Future Tech Insights</h2>
+        <h3>Explore Courses in AI, ML, and Cybersecurity</h3>
+        <ul>
+           
+            <li><a href="https://medium.com/@drishtisethi8/is-artificial-intelligence-the-future-of-everyday-life-8e62f3923b63#:~:text=Conclusion,commerce%20to%20retail%20and%20transportation." style="color:#00c3ff;">AI/Ml in daily life</a></li>
+            <li><a href="https://eiscouncil.org/critical-infrastructure-security/?utm_source=google_ads&utm_medium=18066543991&ad_group=142265902484&ad=618664415930&device=c&keyword=importance%20of%20cybersecurity&gad_source=1&gclid=Cj0KCQjwv_m-BhC4ARIsAIqNeBuY3Eeq6FG2AmmMtFukAu0T28a2uyvqqbuQzhuFJrFZdaq8P7litFsaAiUpEALw_wcB" style="color:#00c3ff;">Importance of Cybersecurity</a></li>
+        </ul>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4QzBdeUQ0Dc?si=LudNwo1zqOHZ2jg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+    
+    <section id="about">
+        <p>Our mission is to explore emerging technologies and provide insightful articles.</p>
+        <table>
+            <tr>
+                <th>Category</th>
+                <th>Popular Topics</th>
+            </tr>
+            <tr>
+                <td>AI & Machine Learning</td>
+                <td>Neural Networks, Deep Learning</td>
+            </tr>
+            <tr>
+                <td>Cybersecurity</td>
+                <td>Threat Analysis, Ethical Hacking</td>
+            </tr>
+        </table>
+        <h3>Recent Articles</h3>
+        <ul>
+            <li><a href="https://www.ibm.com/think/insights/artificial-intelligence-future" style="color:#00c3ff;">The Future of AI in Daily Life by IBM</a></li>
+            <li><a href="https://www.kaspersky.com/resource-center/preemptive-safety/cyber-security-trends" style="color:#00c3ff;">Cybersecurity Trends to Watch</a></li>
+        </ul>
+    </section>
+    
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <img src="Ai-and-ml-1.webp" alt="Tech Event">
+        <img src="cyber security image3.jpg" alt="Tech Conference">
+        <audio controls>
+            <source src="podcast.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+            
+            if (email && message) {
+                alert("Thank you for subscribing! We will get back to you soon.");
+                document.getElementById("contactForm").reset();
+            } else {
+                alert("Please fill out all fields.");
+            }
+        });
+    </script>
+   
+</body>
+</html>
